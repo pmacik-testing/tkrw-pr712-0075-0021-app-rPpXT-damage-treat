@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-rmo6
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0021-tenant/tkrw-pr712-0075-0021-app/devfile-sample-rmo6@sha256:77ff2c78d22d25c52ff4a1bea19959b0e2b3b2db1b8d5eda951b8376b3134e46
+        name: my-nodejs
+        resources: {}
+status: {}
